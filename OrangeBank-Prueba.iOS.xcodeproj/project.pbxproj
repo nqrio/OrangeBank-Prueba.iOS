@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5237DEF21FAF8E800BF6A55 /* TransfersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5237DEE21FAF8E800BF6A55 /* TransfersTableViewCell.swift */; };
 		E5C1BAF521F9CEA300D69DA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C1BAF421F9CEA300D69DA2 /* AppDelegate.swift */; };
 		E5C1BAF721F9CEA300D69DA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C1BAF621F9CEA300D69DA2 /* ViewController.swift */; };
 		E5C1BAFA21F9CEA300D69DA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C1BAF821F9CEA300D69DA2 /* Main.storyboard */; };
 		E5C1BAFC21F9CEA600D69DA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5C1BAFB21F9CEA600D69DA2 /* Assets.xcassets */; };
 		E5C1BAFF21F9CEA600D69DA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C1BAFD21F9CEA600D69DA2 /* LaunchScreen.storyboard */; };
+		E5C1BB0921F9F6CC00D69DA2 /* Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C1BB0821F9F6CC00D69DA2 /* Transfer.swift */; };
+		E5C1BB0C21F9FACD00D69DA2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C1BB0B21F9FACD00D69DA2 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E5237DEE21FAF8E800BF6A55 /* TransfersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersTableViewCell.swift; sourceTree = "<group>"; };
 		E5C1BAF121F9CEA300D69DA2 /* OrangeBank-Prueba.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OrangeBank-Prueba.iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C1BAF421F9CEA300D69DA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5C1BAF621F9CEA300D69DA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		E5C1BAFB21F9CEA600D69DA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5C1BAFE21F9CEA600D69DA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5C1BB0021F9CEA600D69DA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5C1BB0821F9F6CC00D69DA2 /* Transfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transfer.swift; sourceTree = "<group>"; };
+		E5C1BB0B21F9FACD00D69DA2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E550D82B21FC3E2A009CF322 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E5C1BAF621F9CEA300D69DA2 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E550D82C21FC3EA0009CF322 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5C1BAF421F9CEA300D69DA2 /* AppDelegate.swift */,
+				E5C1BAFB21F9CEA600D69DA2 /* Assets.xcassets */,
+				E5C1BAFD21F9CEA600D69DA2 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		E5C1BAE821F9CEA300D69DA2 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +78,23 @@
 		E5C1BAF321F9CEA300D69DA2 /* OrangeBank-Prueba.iOS */ = {
 			isa = PBXGroup;
 			children = (
-				E5C1BAF421F9CEA300D69DA2 /* AppDelegate.swift */,
-				E5C1BAF621F9CEA300D69DA2 /* ViewController.swift */,
+				E550D82C21FC3EA0009CF322 /* Supporting Files */,
+				E5C1BB0A21F9F70E00D69DA2 /* Model */,
+				E550D82B21FC3E2A009CF322 /* Controller */,
+				E5C1BB0B21F9FACD00D69DA2 /* API.swift */,
+				E5237DEE21FAF8E800BF6A55 /* TransfersTableViewCell.swift */,
 				E5C1BAF821F9CEA300D69DA2 /* Main.storyboard */,
-				E5C1BAFB21F9CEA600D69DA2 /* Assets.xcassets */,
-				E5C1BAFD21F9CEA600D69DA2 /* LaunchScreen.storyboard */,
 				E5C1BB0021F9CEA600D69DA2 /* Info.plist */,
 			);
 			path = "OrangeBank-Prueba.iOS";
+			sourceTree = "<group>";
+		};
+		E5C1BB0A21F9F70E00D69DA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E5C1BB0821F9F6CC00D69DA2 /* Transfer.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5C1BAF721F9CEA300D69DA2 /* ViewController.swift in Sources */,
+				E5C1BB0921F9F6CC00D69DA2 /* Transfer.swift in Sources */,
+				E5237DEF21FAF8E800BF6A55 /* TransfersTableViewCell.swift in Sources */,
+				E5C1BB0C21F9FACD00D69DA2 /* API.swift in Sources */,
 				E5C1BAF521F9CEA300D69DA2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "EA.OrangeBank-Prueba-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "EA.OrangeBank-Prueba-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
